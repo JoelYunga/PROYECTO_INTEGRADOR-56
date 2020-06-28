@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15933782190380" configfile="/site_proyecto-56/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="iniciar_sesion.xhtml" x="660" y="12" id="pf15933787775901" outlinks="pf15933798863856" inlinks="pf15933787775902" path="/iniciar_sesion.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="384" y="12" id="pf15933787775903" outlinks="pf15933787775904 pf15933787775902" inlinks="pf15933798863856 pf15933798863937" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="contacto.xhtml" x="96" y="12" id="pf15933787775905" outlinks="pf15933798863937" inlinks="pf15933787775904" path="/contacto.xhtml"/>
+  <links id="pf15933787775904" target="pf15933787775905" source="pf15933787775903" outcome="informacion"/>
+  <links id="pf15933787775902" target="pf15933787775901" source="pf15933787775903" outcome="login"/>
+  <links id="pf15933798863856" target="pf15933787775903" source="pf15933787775901" outcome="regresar_login"/>
+  <links id="pf15933798863937" target="pf15933787775903" source="pf15933787775905" outcome="regresar_contacto"/>
+</pageflow:Pageflow>
