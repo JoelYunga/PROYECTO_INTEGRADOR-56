@@ -445,19 +445,19 @@
    <relationship id="REL123" populated="true" UUID="4dd53c23-aa79-4887-905f-d62f4b018678" deferrability="7" deleteRule="3" fk-table-ref="TAB49" fkCardinality="7" identifying="false" name="provincia_clase_fk" physicalName="provincia_clase_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP124" populated="true" UUID="b9584d09-6f46-4b8b-95a3-9cad3cbfbfcb" fk-column-ref="COL55" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL125" populated="true" UUID="9f811a5d-6442-4d02-8af4-55c5477d0ce5" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="Area_Medicina_Camas_disponibles_fk" physicalName="Area_Medicina_Camas_disponibles_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+   <relationship id="REL125" populated="true" UUID="9f811a5d-6442-4d02-8af4-55c5477d0ce5" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="Area_Medicina_Camas_disponibles_fk" physicalName="area_medicina_camas_disponibles_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP126" populated="true" UUID="ec65d562-7d32-4011-944d-8f2d69fb8e88" fk-column-ref="COL44" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
    </relationship>
-   <relationship id="REL127" populated="true" UUID="f9d536e0-b82f-45c5-9461-287a4a814906" deferrability="7" deleteRule="3" fk-table-ref="TAB29" fkCardinality="7" identifying="false" name="clase_Fallecidos_fk" physicalName="clase_Fallecidos_fk" pk-table-ref="TAB49" pkCardinality="2" updateRule="3" >
+   <relationship id="REL127" populated="true" UUID="f9d536e0-b82f-45c5-9461-287a4a814906" deferrability="7" deleteRule="3" fk-table-ref="TAB29" fkCardinality="7" identifying="false" name="clase_Fallecidos_fk" physicalName="clase_fallecidos_fk" pk-table-ref="TAB49" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP128" populated="true" UUID="a913e2be-57d2-47fd-928a-e82144d67780" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL50" />
    </relationship>
-   <relationship id="REL129" populated="true" UUID="7c311ee8-7fb6-41b7-8465-c3ede614e757" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="clase_Camas_fk" physicalName="clase_Camas_fk" pk-table-ref="TAB49" pkCardinality="2" updateRule="3" >
+   <relationship id="REL129" populated="true" UUID="7c311ee8-7fb6-41b7-8465-c3ede614e757" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="clase_Camas_fk" physicalName="clase_camas_fk" pk-table-ref="TAB49" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP130" populated="true" UUID="8c09ae3f-bccb-43ea-8744-6c29ef0e0066" fk-column-ref="COL46" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL50" />
    </relationship>
-   <relationship id="REL131" populated="true" UUID="6fee0969-4ef8-4712-af28-f41cea3435da" deferrability="7" deleteRule="3" fk-table-ref="TAB58" fkCardinality="7" identifying="false" name="clase_Estadia_fk" physicalName="clase_Estadia_fk" pk-table-ref="TAB49" pkCardinality="2" updateRule="3" >
+   <relationship id="REL131" populated="true" UUID="6fee0969-4ef8-4712-af28-f41cea3435da" deferrability="7" deleteRule="3" fk-table-ref="TAB58" fkCardinality="7" identifying="false" name="clase_Estadia_fk" physicalName="clase_estadia_fk" pk-table-ref="TAB49" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP132" populated="true" UUID="622d5c61-bb36-4bac-9057-665f9a91ac9d" fk-column-ref="COL63" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL50" />
    </relationship>
-   <relationship id="REL133" populated="true" UUID="2c6a7930-cff4-4ff7-934a-2ace8a0b5f19" deferrability="7" deleteRule="3" fk-table-ref="TAB71" fkCardinality="7" identifying="false" name="Perfil_usuario_fk" physicalName="Perfil_usuario_fk" pk-table-ref="TAB66" pkCardinality="2" updateRule="3" >
+   <relationship id="REL133" populated="true" UUID="2c6a7930-cff4-4ff7-934a-2ace8a0b5f19" deferrability="7" deleteRule="3" fk-table-ref="TAB71" fkCardinality="7" identifying="false" name="Perfil_usuario_fk" physicalName="perfil_usuario_fk" pk-table-ref="TAB66" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP134" populated="true" UUID="8d890d82-31ee-4ddf-a7d0-cf04b67749dc" fk-column-ref="COL73" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL67" />
    </relationship>
    <relationship id="REL135" populated="true" UUID="5ae5d9d8-8c4c-46ea-addd-efc28efba0fe" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="canton_provincia_fk" physicalName="canton_provincia_fk" pk-table-ref="TAB88" pkCardinality="2" updateRule="3" >
@@ -466,7 +466,7 @@
    <relationship id="REL137" populated="true" UUID="a643c47f-c811-42c1-a622-7703a3152668" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="parroquia_provincia_fk" physicalName="parroquia_provincia_fk" pk-table-ref="TAB93" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP138" populated="true" UUID="f08cecdc-92b2-4b03-95f0-af5449b45cf5" fk-column-ref="COL5" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL94" />
    </relationship>
-   <relationship id="REL139" populated="true" UUID="3a5300c1-589f-40ad-b144-c426ce6d2cf5" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="camas_dispnibles_area_Camas_fk" physicalName="camas_dispnibles_area_Camas_fk" pk-table-ref="TAB98" pkCardinality="2" updateRule="3" >
+   <relationship id="REL139" populated="true" UUID="3a5300c1-589f-40ad-b144-c426ce6d2cf5" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="camas_dispnibles_area_Camas_fk" physicalName="camas_dispnibles_area_camas_fk" pk-table-ref="TAB98" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP140" populated="true" UUID="f8e63b2f-ec2c-4bb7-b064-46d10e02ff96" fk-column-ref="COL45" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL99" />
    </relationship>
    <relationship id="REL141" populated="true" UUID="6f27df87-53a7-4fc1-a57b-cf0030b40db3" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="area_provincia_fk" physicalName="area_provincia_fk" pk-table-ref="TAB118" pkCardinality="2" updateRule="3" >
@@ -474,7 +474,7 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="0.8408964152537135" viewportX="0" viewportY="96" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
