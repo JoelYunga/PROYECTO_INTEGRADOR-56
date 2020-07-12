@@ -10,7 +10,7 @@
 <body style="background-color: #D5F25C;">
 	<div>
 		<h1>
-			<center>INICIAR SESION</center>
+			<center>REGISTRAR USUARIO</center>
 		</h1>
 	</div>
 
@@ -21,23 +21,25 @@
 	<div class="linea">
 		<h1>_</h1>
 	</div>
+	
 	<div class="cuadro">
+		
 		<form>
-
-			<label for="username">Usuario :</label> <br /> <input
-				value="#{usuario.login}" required="true" type="text" class="entrada"
-				id="usu" placeholder="Ingrese el Usuario" /> <br /> <br /> <label
-				for="password">Contraseña:</label> <br /> <input
-				value="#{usuario.clave}" required="true" type="password"
-				class="entrada" id="clave" placeholder="Ingrese la Contraseña" /> <br />
-			<br /> <input type="submit" id="boton" value="Iniciar Sesión" />
+			<label for="username">Nombre de Usuario:</label><br></br> <input
+				type="text" class="entrada" name="Nombre de usuario"
+				placeholder="Ingrese el Usuario" /> <br></br> <label
+				for="password">Correo:</label> <input type="text"
+				class="entrada" name="correo" placeholder="Ingrese el correo" />
+				<br></br>
+				<label
+				for="password">Contraseña:</label><input type="password"
+				class="entrada" name="clave" placeholder="Ingrese la Contraseña" /><br/> <br/>
+			 
+			 <input type="submit" id="boton"
+				value="Iniciar Sesión" /><br></br>
 		</form>
 		<br />
-		<h:link value="Registrar" outcome="registrarU" />
-		<br />
-		<h:link value="Olvidó Contraseña" outcome="Oclave" />
-		<br />
-		<h:link value="Regresar" outcome="regresar_login" />
+		<h:link value="Regresar" outcome="re_usuario" />
 	</div>
 
 	<div class="linea2">
