@@ -13,5 +13,12 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Jeffry/git/PROYECTO_INTEGRADOR-56/site_proyecto-56/WebContent/WEB-INF/lib/primefaces-8.0.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Jeffry/git/PROYECTO_INTEGRADOR-56/site_proyecto-56/WebContent/WEB-INF/lib/postgresql-9.1-901.jdbc3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jeffry/git/PROYECTO_INTEGRADOR-56/site_proyecto-56/WebContent/WEB-INF/lib/all-themes-1.0.10.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -2,14 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html">
-<head>
-<link rel="stylesheet" href="estilos/iniciar_sesion.css" />
-<title>Iniciar Sesión</title>
-</head>
-<body style="background-color:#D5F25C;">
-	<div >
-		<h1><center>INICIAR SESION</center></h1>
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<link rel="stylesheet" href="estilos/iniciar_sesion.css" />
+	<title>Iniciar Sesión</title>
+</h:head>
+<h:body style="background-color: #D5F25C;">
+	<p:growl id="messages" closable="true">
+		<p:autoUpdate />
+	</p:growl>
+	<div>
+		<h1 align="center">INICIAR SESION</h1>
 	</div>
 
 
@@ -20,31 +24,47 @@
 		<h1>_</h1>
 	</div>
 	<div class="cuadro">
-		<form action="verificarLogin.jsp" method="post">
+		<h:form>
+			<h:panelGrid columns="2">
+				<p:outputLabel for="usuario"
+					value="Correo" />
+				<br></br>
+				<p:inputText required="true" id="usuario" value="#{usuario.login}"
+					placeholder="Ingrese el correo">
+				</p:inputText>
+				<br></br>
 
-			<label for="username">Usuario :</label> <br/>
-				<input type="text" class="entrada" name="usuario"
-				placeholder="Ingrese el Usuario"/> <br/> <br/> <label
-							for="password">Contraseña:</label> <br/> <input
-								type="password" class="entrada" name="clave"
-								placeholder="Ingrese la Contraseña"/> <br/> <br/>
-											<input type="submit" id="boton" value="Iniciar Sesión"/>
-		</form>
-		<br/> <a font-size= "25px" href="registrarEstudiante.jsp">Registrar</a>
-			<br/> <a font-size= "25px" href="olvidarContrasenia.jsp">Olvidó su contraseña</a>
-			<br/><h:link value="Regresar" outcome="regresar_login" />
+				<p:outputLabel for="clave" value="Contraseña:" />
+				<br></br>
+				<p:inputText required="true" id="clave" type="password"
+					vale="#{usuario.clave}" placeholder="Ingrese la contraseña" />
+				<br></br>
+
+				<p:separator />
+				<br></br>
+				<p:commandButton icon="ui-icon-key" value="Iniciar Sesión" />
+			</h:panelGrid>
+		</h:form>
+
+		<h:link value="Registrar" outcome="registrarU" />
+		<br />
+		<h:link value="Olvidó Contraseña" outcome="goClave" />
+		<br />
+		<h:link value="Regresar" outcome="regresar_login" />
 	</div>
-	
+
 	<div class="linea2">
 		<h1>_</h1>
 	</div>
-<br/>
+	<br />
 	<div class="texto">
-		<h5><center>
-			Universidad Politecnica Salesiana <br/> Ingeniería en Ciencias de
-				la Computación <br/> Creadores: Joel Yunga, Estacio Jefferson, Jefry
-					Navas 
-		</center></h5>
+		<h5 align="center">
+
+			Universidad Politecnica Salesiana <br /> Ingeniería en Ciencias de
+			la Computación <br /> Creadores: Joel Yunga, Estacio Jefferson,
+			Jefry Navas
+
+		</h5>
 	</div>
-</body>
+</h:body>
 </html>
