@@ -5,13 +5,11 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 <h:head>
-	<link rel="stylesheet" href="estilos/iniciar_sesion.css" />
+	<link rel="stylesheet" href="estilos/registro.css" />
 	<title>Registrar Usuario</title>
 </h:head>
 <h:body style="background-color: #D5F25C;">
-<p:messages id="messages" closable="true">
-				<p:autoUpdate />
-			</p:messages>
+
 	<div>
 		<h1 align="center">REGISTRAR USUARIO</h1>
 	</div>
@@ -23,33 +21,34 @@
 	<div class="linea">
 		<h1>_</h1>
 	</div>
-
+	<p:growl id="messages" closable="true">
+		<p:autoUpdate />
+	</p:growl>
 	<div class="cuadro">
 
 		<h:form>
 			<h:panelGrid columns="2">
-				<p:outputLabel for="usuario" value="Nombre de Usuario:" />
+				<p:outputLabel for="nombres" value="Nombres:" />
 				<br></br>
-				<p:inputText id="usuario" required="true" />
+				<p:inputText id="nombres" required="true" value="#{UsuarioBean.nombres}" />
 				<br></br>
-
+				<p:outputLabel for="apellidos" value="Apellidos:" />
+				<br></br>
+				<p:inputText id="apellidos" required="true" value="#{UsuarioBean.apellidos}"/>
+				<br></br>
 				<p:outputLabel for="correo" value="Correo:" />
 				<br></br>
-				<p:inputText id="correo" required="true" />
+				<p:inputText id="correo" required="true" value="#{UsuarioBean.nombre_usuario}"/>
+				<br></br>
+				<p:outputLabel for="contraseña" value="Contraseña:" />
+				<br></br>
+				<p:inputText id="contraseña" type="password" required="true" value ="#{UsuarioBean.contraseña}"/>
 				<br></br>
 
-				<p:outputLabel for="clave" value="Contraseña:" />
-				<br></br>
-				<p:inputText id="clave" required="true" />
-				<br></br>
-				
-				<p:commandButton icon="ui-icon-disk" value="Registrar" />
-				
-				
-			
+				<p:commandButton value="Registrar" actionListener="#{UsuarioBean.almaceneDatosUsuario()}" icon="ui-icon-disk"  />
 			</h:panelGrid>
 		</h:form>
-		<br />
+
 		<h:link value="Regresar" outcome="re_usuario" />
 	</div>
 

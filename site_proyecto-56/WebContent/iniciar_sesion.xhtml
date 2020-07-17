@@ -9,9 +9,9 @@
 	<title>Iniciar Sesión</title>
 </h:head>
 <h:body style="background-color: #D5F25C;">
-	<p:messages id="messages" closable="true">
+	<p:growl id="messages" closable="true">
 		<p:autoUpdate />
-	</p:messages>
+	</p:growl>
 	<div>
 		<h1 align="center">INICIAR SESION</h1>
 	</div>
@@ -26,10 +26,10 @@
 	<div class="cuadro">
 		<h:form>
 			<h:panelGrid columns="2">
-				<p:outputLabel for="login"
+				<p:outputLabel for="usuario"
 					value="Correo" />
 				<br></br>
-				<p:inputText required="true" id="login" value="#{usuario.login}"
+				<p:inputText required="true" id="usuario" value="#{usuario.login}"
 					placeholder="Ingrese el correo">
 				</p:inputText>
 				<br></br>
