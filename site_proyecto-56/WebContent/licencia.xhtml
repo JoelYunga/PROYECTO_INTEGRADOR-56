@@ -3,12 +3,13 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
-<head>
+
+    <h:head>
 
 <title>Licencia</title>
 <link href="estilos/licencia.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+</h:head>
+<h:body>
 
 	<p text-align="center">
 		<br /> <br /> <b><h1>
@@ -42,12 +43,15 @@
 	</b>
 	<br />
 	<br />
-	<li><h2>
+	<li><h1>
 			<a href="https://www.apache.org/licenses/LICENSE-2.0"> <center>LICENCIA
 				APACHE 2.0</center></a>
-		</h2></li>
+                </h1>
+                <li><center><h:link value="Regresar" outcome="regresar_licencia" /></center></li>
+		
+        </li>
 
 	</p>
-</body>
-
+</h:body>
+    
 </html>

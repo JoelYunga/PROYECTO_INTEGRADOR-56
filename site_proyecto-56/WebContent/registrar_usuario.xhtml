@@ -21,35 +21,39 @@
 	<div class="linea">
 		<h1>_</h1>
 	</div>
-	<p:growl id="messages" closable="true">
+    <p:growl id="mensaje" showSummary="false" showDetail="true">
 		<p:autoUpdate />
 	</p:growl>
 	<div class="cuadro">
 
 		<h:form>
+                  
+                    
 			<h:panelGrid columns="2">
 				<p:outputLabel for="nombres" value="Nombres:" />
 				<br></br>
-				<p:inputText id="nombres" required="true" value="#{UsuarioBean.nombres}" />
+                                <p:inputText id="nombres" required="true" value="#{usuarioController.usuario.nombres}" />
 				<br></br>
 				<p:outputLabel for="apellidos" value="Apellidos:" />
 				<br></br>
-				<p:inputText id="apellidos" required="true" value="#{UsuarioBean.apellidos}"/>
+                                <p:inputText id="apellidos" required="true" value="#{usuarioController.usuario.apellidos}"/>
 				<br></br>
 				<p:outputLabel for="correo" value="Correo:" />
 				<br></br>
-				<p:inputText id="correo" required="true" value="#{UsuarioBean.nombre_usuario}"/>
+                                <p:inputText id="correo" required="true" value="#{usuarioController.usuario.usuario}"/>
 				<br></br>
 				<p:outputLabel for="contraseña" value="Contraseña:" />
 				<br></br>
-				<p:inputText id="contraseña" type="password" required="true" value ="#{UsuarioBean.contraseña}"/>
-				<br></br>
-
-				<p:commandButton value="Registrar" actionListener="#{UsuarioBean.almaceneDatosUsuario()}" icon="ui-icon-disk"  />
-			</h:panelGrid>
+                                <p:password id="contraseña" required="true" value ="#{usuarioController.usuario.contraseña}" feedback="true" promptLabel="Mínino 6 dígitos"/>
+                                <br></br>
+                                <p:commandButton value="Registrar" actionListener="#{usuarioController.registrar()}" icon="ui-icon-disk" update="mensaje" ajax="false"/>
+                                <br/>
+                               
+                        </h:panelGrid>
 		</h:form>
 
-		<h:link value="Regresar" outcome="re_usuario" />
+		
+                                <h:link value="Regresar" outcome="re_usuario" />
 	</div>
 
 	<div class="linea2">

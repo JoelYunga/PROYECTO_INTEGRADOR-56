@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="./css/default.css"/>
+        <h:outputStylesheet name="./css/cssLayout.css"/>
+        <link rel="stylesheet" href="estilos/menu.css" />
+	<title>Facelets Template</title>
+        <f:event type="preRenderView" listener="#{plantillaController.verificarSesion()}"/>
+        
+    </h:head>
+
+    <h:body>
+
+        <div id="top">
+            <ui:insert name="top">
+                <h:form>
+                    
+                    <div align="left">
+                        
+                        Bienvenido Usuario: #{usuarioController.mostrarUsuarioLogeado()}
+                         <p:commandButton value="Crear Usuario" action="/crearUsuario?faces-redirect=true"/>
+                         <p:commandButton value="Ver Usuarios" action="/usuarios_registrados?faces-redirect=true"/>
+                         <p:commandButton value="Auditoría" action="/Auditoria?faces-redirect=true"/>
+                         <p:commandButton actionListener="#{plantillaController.cerrarSesion()}" value="Cerrar Sesión" action="/iniciar_sesion?faces-redirect=true"/>
+                    </div>    
+                                </h:form>
+                 </ui:insert>
+        </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">
+                
+                
+            </ui:insert>
+        </div>
+
+        <div >
+            <ui:insert name="bottom">
+               <h5 align="center">
+
+			Universidad Politecnica Salesiana <br /> Ingeniería en Ciencias de
+			la Computación <br /> Creadores: Joel Yunga, Estacio Jefferson,
+			Jefry Navas
+
+		</h5>
+            </ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
