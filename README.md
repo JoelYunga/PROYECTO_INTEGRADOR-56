@@ -113,11 +113,11 @@ luego su nueva instancia de WildFly esperando para darle la bienvenida en: http:
  5TO NIVEL
  MATERIAS: 
  * FUNDAMENTOS DE BASE DE DATOS
-    - ING. RICARDO ALBARRACIN 
+    * ING. RICARDO ALBARRACIN 
  * SOFTWARE LIBRE
-    - ING. RODRIGO TUFIÑO  
+    * ING. RODRIGO TUFIÑO  
  * SISTEMAS DE INFORMACIÓN
-    - ING. PATSY PRIETO   
+    * ING. PATSY PRIETO   
 
 ***
 
