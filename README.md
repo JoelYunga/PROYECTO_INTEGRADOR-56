@@ -93,6 +93,11 @@ luego su nueva instancia de WildFly esperando para darle la bienvenida en: http:
 
 
 ***
+#  _LICENCIA_
+### Para la mayoría de los programas pequeños, usar el copyleft no amerita el esfuerzo. Nosotros tomamos como referencia las 300 líneas: cuando el código fuente de un paquete de software tiene menos de 300 líneas, los beneficios que proporciona el copyleft suelen ser demasiado pequeños para justificar la inconveniencia de asegurarse que una copia de la licencia acompañe siempre al software.
+
+### Para esos programas recomendamos la Licencia Apache 2.0. Se trata de una licencia de software laxa (sin copyleft) que contiene cláusulas para evitar que contribuidores y distribuidores sean demandados por violación de patentes.
+***
 
 #  _REFERENCIAS_
 * https://jdbc.postgresql.org/download.html
@@ -101,11 +106,6 @@ luego su nueva instancia de WildFly esperando para darle la bienvenida en: http:
 
 ***
 
-#  _LICENCIA_
-### Para la mayoría de los programas pequeños, usar el copyleft no amerita el esfuerzo. Nosotros tomamos como referencia las 300 líneas: cuando el código fuente de un paquete de software tiene menos de 300 líneas, los beneficios que proporciona el copyleft suelen ser demasiado pequeños para justificar la inconveniencia de asegurarse que una copia de la licencia acompañe siempre al software.
-
-### Para esos programas recomendamos la Licencia Apache 2.0. Se trata de una licencia de software laxa (sin copyleft) que contiene cláusulas para evitar que contribuidores y distribuidores sean demandados por violación de patentes.
-***
 
 #  _CRÉDITOS_
  UNIVERSIDAD POLITÉCNICA SALESIANA 
