@@ -5,14 +5,32 @@ Proyecto Integrador de las materias de Gestión de Base de Datos, Sistemas de In
 BASES CAMAS HOSPITALARIAS
 =======
 
-Programas Utilizadas en el proyecto
+Programas Utilizados 
 -----------
 
-  * [Libreria Java](https://jdbc.postgresql.org/download.html).
+  * [Pentaho Report Designer](https://sourceforge.net/projects/pentaho/files/Report%20Designer/).
   * [Pentaho Data Integration](https://www.hitachivantara.com/en-us/products/data-management-analytics/pentaho-platform/pentaho-data-integration.html).
   * [Eclipse](https://www.eclipse.org/downloads/).
+  * [Power Architect](https://www.youwindowsworld.com/en/downloads/software/development/sql-power-architect).
+  * [PostgreSQL](https://www.postgresql.org/download/).
   
 
+***
+Librerias Utilizadas
+-----------
+
+  * [Libreria PostgreSQL](https://jdbc.postgresql.org/download.html).
+  * [Libreria Java](https://www.java.com/es/download/faq/develop.xml).
+ 
+ 
+***
+Servidor Web
+-----------
+
+  * [Wildfly](https://wildfly.org/downloads/).
+  
+ 
+ 
 ***
 
 # _Pre-requisitos_ 
